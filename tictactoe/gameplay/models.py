@@ -8,6 +8,7 @@ class Game(models.Model):
 
     start_time = models.DateTimeField(auto_now_add=True)
     last_active = models.DateTimeField(auto_now=True)
+    status = models.CharField(max_length=1, default='F')
 
 
 class Move(models.Model):
